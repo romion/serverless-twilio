@@ -1,0 +1,15 @@
+{
+  "name": "serverless-twilio",
+  "version": "0.0.1",
+  "description": "Send a text message via twilio from aws lambda.",
+  "main": "functions/sms.js",
+  "scripts": {},
+  "author": "Roman Sazhniev",
+  "license": "MIT",
+  "dependencies": {
+    "aws-serverless-express": "^3.4.0",
+    "serverless": "^3.34.0",
+    "serverless-apigw-binary": "^0.4.4",
+    "twilio": "^3.65.0"
+  }
+}

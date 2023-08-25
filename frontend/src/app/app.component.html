@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="">
+    <h2>Send your message to any mobile number</h2>
+    <div id="message"></div>
+    <div class="inputs">
+      <input #phone id="phone-number" placeholder="Phone Number" />
+      <input #msg id="text" placeholder="Input your text message" />
+    </div>
+    <div class='api-actions'>
+      <button (click)="sendSms(phone.value, msg.value)" [disabled]="isLoading" id="send-text" class="btn">Send sms</button>
+    </div>
+    <p>{{message}}</p>
+
+    <a href="https://github.com/romion/serverless-twilio">
+      View the source on github
+    </a>
+  </div>
+</div>
